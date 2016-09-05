@@ -59,21 +59,21 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </div>
             <div class="row">
                 <div class="col-sm-4 col-xs-12">
-                    <div id="gtco-logo"><a href="index.html">Historia Clinica <em>.</em></a></div>
+                    <div id="gtco-logo"><a href="{{ url('/') }}">Historia Clinica <em>.</em></a></div>
                 </div>
                 <div class="col-xs-8 text-right menu-1">
                     <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">Nosotros</a></li>
+                        <li class="active"><a href="{{ url('/') }}"">Home</a></li>
+                        <li><a href="#">Nosotros</a></li>
                         <li class="has-dropdown">
-                            <a href="services.html">Servicios</a>
+                            <a href="#">Servicios</a>
                             <ul class="dropdown">
                                 <li><a href="#">Regeneracion Celular</a></li>
                             </ul>
                         </li>
                         </li>
-                        <li><a href="portfolio.html">Portafolio</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#gtco-portfolio">Portafolio</a></li>
+                        <li><a href="#gtco-subscribe">Contacto</a></li>
                         <li class="nav navbar-nav navbar-right">
                             @if (Auth::guest())
                                 <li><a href="{{ url('/login') }}">Login</a></li>
@@ -89,7 +89,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         </div>
     </nav>
 
-    <header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url( {{ asset('/img/banner3.jpg') }} );">
+    <header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url( {{ asset('/img/banner.png') }} );">
         <!-- <div class="overlay"></div> -->
         <div class="gtco-container">
             <div class="row">
@@ -97,7 +97,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <div class="display-t">
                         <div class="display-tc">
                             <h1 class="animate-box" data-animate-effect="fadeInUp">LLEVANDOTE AL SIGUIENTE NIVEL</h1>
-                            <p class="animate-box" data-animate-effect="fadeInUp"><a href="#" class="btn btn-danger btn-lg btn-outline">Contactanos</a></p>
+                            <p class="animate-box" data-animate-effect="fadeInUp"><a href="#gtco-subscribe" class="btn btn-danger btn-lg btn-outline">Contactanos</a></p>
                         </div>
                     </div>
                 </div>
